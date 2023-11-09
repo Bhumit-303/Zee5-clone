@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Series</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main2.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="series.css">
+</head>
+<body>
+    <nav>  
+        <div id="navbar">
+            <div id="left">
+                <a href="home.html"><img id="ZEE5_logo" src="https://www.zee5.com/images/ZEE5_logo.svg?ver=3.15.6"></a>
+                <ul>
+                    <li><a href="./home.html">Home</a></li>
+                    <li><a href="./TV.html">TV Shows</a></li>
+                    <li><a href="./movies.html">Movies</a></li>
+                    <li><a href="./premium.html">Premium</a></li>
+                    <li><a href="./series.html">Web Series</a></li>
+                </ul>
+            </div>
+            <div id="right">
+                <ul>
+                    <li><input type="text" id="searchInput" placeholder="Search Movies, Shows, Channel, etc."></li>
+                    <img id="icon" onclick="performSearch()" src="https://th.bing.com/th/id/OIP.NYKiO70QfJjBNwVaf_Y9cgAAAA?pid=ImgDet&rs=1">
+                    <li><div id="results"></div></li>
+                    <li><button class="cred" onclick="signUp()">SignUp</button></li>
+                    <li><button class="cred" onclick="login()">LOGIN</button></li>
+                    <li><button id="BUY">BUY Plan</button></li>
+                </ul>
+                
+            </div> 
+        </div>
+    </nav>
+<div id="imgSlider">
+    <button id="prevBtn"> < </button>
+    <img id="banner" src="" alt="">
+    <button id="nextBtn"> > </button>
+</div>
+
+<div class="trayContentWrap">
+    <div class="trayHeader">
+        <h2>Web Series You Can't Miss</h2>
+        <a href="./series.html" class="arrow iconInitialLoad-ic_viewall noSelect">
+        <div class="view-all">More ></div>
+    </a>
+    </div>
+    <div id="cardContainer"></div>
+</div>
+
+<footer id="footer">
+    <div class="container">
+    
+        <hr style="height:0.5px;border-width:0;color:gray;background-color:rgb(32, 28, 28);margin-top: 15px;">
+        
+        <br>
+        <div class="logDiv">
+            
+            <div class="logo">
+            
+            <h4>Download Apps</h4>            
+                <a href="https://play.google.com/store/apps/details?id=com.graymatrix.did"><img src="https://www.zee5.com/images/play_store.png?ver=2.50.94"></a>
+                <a href="https://apps.apple.com/in/app/zee5-shows-live-tv-movies/id743691886"><img src="https://www.zee5.com/images/app_store.png?ver=2.50.94"></a>
+            </div>
+            <div class="leftlogo">
+                <h4>Connect with us</h4>
+                <a href="https://www.facebook.com/ZEE5/" class="fb"><img class="shl" src="https://img.icons8.com/?size=50&id=60459&format=png"></a>
+                <a href="https://www.instagram.com/zee5/" class="insta"><img class="shl" src="https://img.icons8.com/?size=48&id=5eT5OnLluNOx&format=png"></a> 
+                <a href="https://twitter.com/zee5india" class="twitter"><img class="shl" src="https://img.icons8.com/?size=50&id=111057&format=png"></a> 
+                <a href="https://www.youtube.com/channel/UCXOgAl4w-FQero1ERbGHpXQ" class="youtube"><img class="shl" src="https://img.icons8.com/?size=50&id=37325&format=png"></a> 
+                
+            </div>
+        </div>
+       
+       <div class="about">
+        <!-- about -->
+           <p>About us</p>
+
+            <p>|</p>
+            <!-- help center -->
+            <p>Help Center</p>
+
+            <p>|</p>
+            <!-- Privacy policy -->
+            <p>Privacy Policy</p>
+
+            <p>|</p>
+            <!-- Terms of use -->
+            <p>Terms of Use</p>
+
+        </div>
+        <div class="row">
+            <div class="footer-col">
+                <h3><a href=""> Popular TV Shows</a></h3>
+                    <div> <a href="https://www.zee5.com/tv-shows/details/mahabharat/0-6-3331"></a>Mahabharat</div>
+                    <div> <a href="https://www.zee5.com/tv-shows/details/jhansi-ki-rani/0-6-124">Jhasi Ki Rani</a></div>
+                    <div> <a href="https://www.zee5.com/tv-shows/details/meet/0-6-3510">Meet</a></div>
+                    <div> <a href="https://www.zee5.com/tv-shows/details/indira/0-6-4z5250031">Indira</a></div>
+                    <div><a href="https://www.zee5.com/collections/free-korean-tv-shows/0-8-1017">Korean Drama</a></div>
+                    <div><a href="https://www.zee5.com/tv-shows/details/annapoorna/0-6-4z5250953">Annapoorna</a></div>
+                    <div><a href="https://www.zee5.com/movies/details/kya-meri-sonam-gupta-bewafa-hai/0-0-1z51625">Kumkum Bhagya</a></div>
+                    <div><a href="https://www.zee5.com/tv-shows/details/kundali-bhagya/0-6-366">Kundali Bhagya</a></div>
+                    <div><a href="https://www.zee5.com/tv-shows/details/kumkum-bhagya/0-6-127">Kumkum Bhagya</a></div>
+                    <div><a href="https://www.zee5.com/tv-shows/details/bhagya-lakshmi/0-6-3392">Bhagya Lakshmi</a></div>
+                    <div><a href="https://www.zee5.com/collections/free-korean-tv-shows/0-8-1017">Tujhse Hai Raabta</a></div>
+                    <div><a href="https://www.zee5.com/collections/pakistani-shows/0-8-3z5367858">Kyun Rishton Mein Katti Batti</a></div>
+                   
+                    
+                
+            </div>
+            <div class="footer-col">
+             <h3>Premium Movies</h3>
+                <div><a href="https://www.zee5.com/movies/details/kisi-ka-bhai-kisi-ki-jaan/0-0-1z5379692">Kisi Ka Bhai Kisi Ki Jaan</a></div>
+                <div><a href="https://www.zee5.com/movies/details/rrr/0-0-1z5145092">RRR</a></div>
+                <div><a href="https://www.zee5.com/movies/details/uri-the-surgical-strike/0-0-33204">Uri:The Surgical Strike</a></div>
+                <div><a href="https://www.zee5.com/movies/details/haddi/0-0-1z5418670">Haddi</a></div>
+                <div><a href="#">KAAGAZ</a></div>
+                <div><a href="https://www.zee5.com/movies/details/gadar-2/0-0-1z5437988">Gadar 2</a></div>
+                <div><a href="https://www.zee5.com/movies/details/helmet/0-0-1z51560">Helmet</a></div>
+                <div><a href="https://www.zee5.com/movies/details/sirf-ek-bandaa-kaafi-hai/0-0-1z5359029">Bandaa</a></div>
+                <div><a href="https://www.zee5.com/movies/details/uunchai/0-0-1z5277822">Uunchai</a></div>
+                <div><a href="https://www.zee5.com/movies/details/dial-100/0-0-1z51248">Dial 100</a></div>
+             
+         </div>
+   
+         <div class="footer-col">
+             <h3>Popular LIVE TV Channels</h3>
+             
+                <div><a href="">Aaj Tak</a></div>
+                   <div><a href="https://www.zee5.com/live-tv/zee-news/0-9-zeenews">Zee News</a></div>
+                   <div><a href="https://www.zee5.com/live-tv/zee-tv-hd/0-9-zeetvhd">Zee Tv HD</a></div>
+                   <div><a href="https://www.zee5.com/live-tv/andtv-hd/0-9-tvhd_0">&TV HD</a></div>
+                   <div><a href="https://www.zee5.com/live-tv/zee-marathi-hd/0-9-zeemarathi">Zee Marathi HD</a></div>
+             
+         </div>
+         <div class="footer-col">
+             <h3>Popular Web Series</h3>
+                   <div><a href="https://www.zee5.com/web-series/details/love-bites/0-6-2135">Love Bites</a></div>
+                   <div><a href="https://www.zee5.com/web-series/details/black-widows/0-6-3029">Black Widows</a></div>
+                   <div><a href="https://www.zee5.com/web-series/details/duranga/0-6-4z5193948">Duranga 2</a></div>
+                   <div><a href="https://www.zee5.com/web-series/details/shikarpur/0-6-4z5273911">Shikarpur</a></div>
+                   <div><a href="https://www.zee5.com/web-series/details/sunflower/0-6-3284">Sunflower</a></div>
+                   <div><a href="https://www.zee5.com/web-series/details/tripling/0-6-3350">Tripling</a></div>
+                   <div><a href="https://www.zee5.com/web-series/details/pitchers/0-6-3348">Pitchers</a></div>
+                   <div><a href="https://www.zee5.com/web-series/details/naxalbari/0-6-2923">Nexalbari</a></div>
+                   <div><a href="https://www.zee5.com/web-series/details/anantham/0-6-4z5123144">Anantham</a></div>
+                   <div><a href="">Jeet Ki Zid</a></div>
+                   <div><a href="https://www.zee5.com/web-series/details/taj/0-6-4z5311140">Taj</a></div>
+                   <div><a href="https://www.zee5.com/web-series/details/gaalivaana/0-6-4z5114116">Gaalivaana</a></div>
+             
+         </div>
+         <div class="footer-col">
+             <h3>Bollywood Top Celebrities</h3>
+                <div><a href="https://www.zee5.com/zee5news/celebs/manoj-bajpayee">Manoj Bajpai</a></div>
+                <div><a href="https://www.zee5.com/movies/celeb/ameesha-patel">Ameesha Patel</a></div>
+                <div><a href="https://www.zee5.com/movies/celeb/sunny-deol">Sunny Deol</a></div>
+                <div><a href="https://www.zee5.com/zee5news/celebs/pooja-hegde">Pooja Hegde</a></div>
+                <div><a href="https://www.zee5.com/zee5news/celebs/sunny-leone">Sunny Leone</a></div>
+                <div><a href="https://www.zee5.com/zee5news/celebs/disha-patani">Disha Patani</a></div>
+                <div><a href="https://www.zee5.com/zee5news/celebs/deepika-padukone">Deepika Padukone</a></div>
+                <div><a href="https://www.zee5.com/zee5news/celebs/salman-khan">Salman Khan</a></div>
+                <div><a href="https://www.zee5.com/zee5news/celebs/nora-fatehi">Nora Fatehi</a></div>
+             
+         </div>
+
+         <div>
+            <h3>Games & News</h3>
+            <div><a href="https://www.zee5.com/play5-games/">Play</a></div>
+            <div><a href="https://www.zee5.com/stories/">Stories</a></div>
+         </div>
+     </div>
+    <div class="end">Best viewed on Google Chrome 80+, Microsoft Edge 81+, Mozilla Firefox 75+, Safari 5.1.5+
+     Copyright © 2022 Zee Entertainment Enterprises Ltd. All rights reserved.</div>
+ </div>
+ </footer>
+</body>
+</html>
+<script src="series.js"></script>

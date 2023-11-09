@@ -1,0 +1,224 @@
+/* css for nav bar */
+body {
+    font-family: NotoSansRegular, sans-serif;;
+    margin: auto;
+    background-color: rgb(15,6,23);
+}
+ 
+#navbar {
+    margin: auto;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid white; */
+    padding: 15px;
+}
+
+ #left{
+    display: flex;
+    justify-content: space-around;
+} 
+
+#right{
+    justify-content: space-evenly;
+    /* border: 2px solid white; */
+    width: 42%;
+}
+
+#ZEE5_logo{
+   width: 50px;
+   height: 50px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+}
+
+#left > ul >li:hover{
+    text-decoration: underline white 3px;
+}
+
+#right > ul{
+    display: flex;
+}
+
+#searchInput{
+    color: white;
+    background-color:transparent;
+    text-overflow: ellipsis;
+    border-radius: 6px;
+    width: 100%;
+    padding: 10px;
+}
+
+#searchBtn{
+    padding: 1%;
+}
+
+#icon{
+    background-color: transparent;
+    padding: 5px;
+    width: 4%;
+    height: 4%;
+}
+
+h2{
+    color: white;
+}
+
+/* adding css to button in the right box */
+.cred{
+    background-color: transparent;
+border: 1px solid white;
+border-radius: 6px;
+color: white;
+float: right;
+font-weight: 700;
+padding: 10px 12px;
+text-transform: uppercase;
+text-decoration: none;
+outline: rgb(66, 153, 225) solid 1px
+}
+
+.cred:hover{
+    transition: background-color 0.25s ease-in 0s, bottom 0.25s cubic-bezier(0.33, 0.04, 0.63, 0.93) 0s, color 0.25s ease-in 0s, bottom 0.25s cubic-bezier(0.33, 0.04, 0.63, 0.93) 0s;
+background-color: rgb(255, 255, 255);
+color: rgb(51, 51, 51)
+}
+
+#BUY{
+    border: none;
+border-radius: 6px;
+position: relative;
+display: inline-block;
+background-color: rgb(130, 48, 198);
+color: white;
+padding: 10px 12px;
+text-decoration: none;
+outline: rgb(66, 153, 225) solid 1px;
+}
+
+#BUY:hover{
+    background-color: rgb(92, 22, 149);
+transition: background-color 0.25s ease-in 0s, bottom 0.25s cubic-bezier(0.33, 0.04, 0.63, 0.93) 0s
+}
+
+
+
+/* css for the slider on the home page */
+#prevBtn{
+    padding: 2%;
+    background-color: rgb(15,6,23);
+    color: white;
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+#nextBtn{
+    padding: 2%;
+    background-color: rgb(15,6,23);
+    color: white;
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+#imgSlider{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#Box{
+    display: flex;
+    justify-content:space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-right: 2%;
+}
+
+/* css for movie section */
+#load-more{
+    background-color: transparent;
+    color: white;
+    padding: 2%;
+    margin-top: 30%;
+    margin-right: 6%;
+}
+
+.trayHeader{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.view-all{
+    margin-top: 40%;
+}
+
+ #cardContainer{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    row-gap: 20px;
+    width: 90%;
+    color: white;
+}
+.card {
+    display: inline-block;
+    margin: 1.5%;
+    padding: 10px;
+    border: 1px solid white;
+    transition: transform 0.2s;
+    color: white;
+
+}
+
+.card img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.card-details {
+    display: none;
+}
+
+.card:hover .card-details {
+   display: block; 
+} 
+
+.card h4,
+.card li {
+    display: none;
+}
+
+.card:hover h4,
+.card:hover li {
+    display: block; /* Show h4 and li on hover */
+    position: relative;
+}
+
+.trayContentWrap {
+    display: flex;
+    width: 100%;
+}
+
+.trayLangWrap{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+

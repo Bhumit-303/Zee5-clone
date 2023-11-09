@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+/* ----------------------------------heading End --------------------- */
+
+.card_container {
+    height: 380px;
+    display: flex;
+    align-items: center;
+    transform: translateX(0);
+
+    transition: all 0.4s ease-in-out;
+    
+
+}
+.card{
+    
+    min-width: 195px;
+    height: 330px;
+    border-radius: 5px;
+    margin-top: 1%;
+    position: relative;
+    transition: 00.3s;
+    margin-right: 25px;
+    box-shadow: rgba(194, 130, 171, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+.card:hover{
+    transform: scale(1.1);
+    border: 4px solid #ffffff;
+}
+.crown{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    background-color: #ffffff;
+    padding: 1% 1.5%;
+    background-color: none;
+    border-radius: 50%;
+}
+.crown a{
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+.crown i{
+    color:  #ff0066;
+   background-color: #ffffff;
+  
+
+}
+.card >img{
+    width: 100%;
+    border-radius: 5px;
+}
+.text{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #ffffff;
+    padding-bottom: 10px;
+    line-height: 2;
+    padding-left: 2%;
+    display: none;
+    transition: 0.4s;
+}
+.card:hover .text{
+    display: inherit;
+}
+.text >p{
+    padding: 1% 1.5%;
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+.text_bottom{
+    display: flex;
+    align-items: center;
+    
+}
+.text_bottom a{
+    border: 1px solid gray;
+    padding: 1% 2.5%;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.text_bottom a +p{
+    margin-top: 10px;
+}
+.text_bottom a:hover{
+    background-color: #210B61;
+    color: #ffffff;
+}
+.text_bottom p{
+    color: gray;
+}
+
+  
+
+.movie-list-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+
+@media only screen and (max-width: 520px){
+
+  .items > img{
+    width: 100%;
+    height:250px;
+    object-fit: cover;
+}
+
+} 
