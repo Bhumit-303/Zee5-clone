@@ -90,7 +90,7 @@
 /* Media query for phone screens */
 @media only screen and (max-width: 650px) {
     body {
-        font-size: 14px; 
+        font-size: 10px; 
     }
 
     #navbar {
@@ -116,6 +116,9 @@
 
 /* Media query for tablet screens */
 @media only screen and (min-width: 651px) and (max-width: 1024px) {
+    body {
+        font-size: 14px; 
+    }
     #navbar {
         padding: 10px; 
     }
