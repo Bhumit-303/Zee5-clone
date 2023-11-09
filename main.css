@@ -4,7 +4,7 @@ body {
     margin: auto;
     background-color: rgb(15,6,23);
 }
- 
+
 #navbar {
     margin: auto;
     width: 95%;
@@ -169,7 +169,7 @@ transition: background-color 0.25s ease-in 0s, bottom 0.25s cubic-bezier(0.33, 0
     grid-template-columns: repeat(5,1fr);
     row-gap: 20px;
     width: 90%;
-    color: white;
+    color: white; 
 }
 .card {
     display: inline-block;
