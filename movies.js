@@ -53,7 +53,7 @@ function performSearch() {
 
 
 //java script for slider 
-let TVbanner = [
+let Moviebanner = [
     "https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-0-296370/cover/1920x7709cfed81f937949f082ad398af20d0807.jpg",
     "https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-0-1z5437988/cover/1920x770ac7c2520eccc4058985879c5589cfa4b.jpg",
     "https://akamaividz2.zee5.com/image/upload/w_1188,h_475,c_scale,f_webp,q_auto:eco/resources/0-0-1z5418670/cover/1920x770e3d785a94a8f4055903a344d242b0515c4e946cdcbbf4746bf0aef9e05a9b0c0.jpg",
@@ -69,27 +69,35 @@ let nextButton = document.querySelector("#nextBtn");
 let currentIndex = 0;
 
 function updateImage() {
-    image.setAttribute("src", TVbanner[currentIndex]);
+    image.setAttribute("src", Moviebanner[currentIndex]);
 }
 
 function nextImage() {
     currentIndex++;
-    if (currentIndex >= TVbanner.length) {
+    if (currentIndex >= Moviebanner.length) {
         currentIndex = 0;
     }
     updateImage();
+    updateButtonBackgrounds()
 }
 
 function prevImage() {
     currentIndex--;
     if (currentIndex < 0) {
-        currentIndex = TVbanner.length - 1;
+        currentIndex = Moviebanner.length - 1;
     }
     updateImage();
+    updateButtonBackgrounds()
 }
 
 nextButton.addEventListener("click", nextImage);
 prevButton.addEventListener("click", prevImage);
+
+function updateButtonBackgrounds() {
+    prevButton.style.backgroundImage = `url('${Moviebanner[currentIndex - 1 < 0 ? Moviebanner.length - 1 : currentIndex - 1]}')`;
+    nextButton.style.backgroundImage = `url('${Moviebanner[currentIndex + 1 >= Moviebanner.length ? 0 : currentIndex + 1]}')`;
+}
+
 
 // Add autoplay functionality
 let autoplayInterval;

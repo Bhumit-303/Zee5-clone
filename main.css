@@ -1,6 +1,6 @@
 /* css for nav bar */
 body {
-    font-family: NotoSansRegular, sans-serif;;
+    font-family: NotoSansRegular, sans-serif;
     margin: auto;
     background-color: rgb(15,6,23);
 }
@@ -117,23 +117,27 @@ transition: background-color 0.25s ease-in 0s, bottom 0.25s cubic-bezier(0.33, 0
 /* css for the slider on the home page */
 #prevBtn{
     padding: 2%;
-    background-color: rgb(15,6,23);
+    /* background-color: rgb(15,6,23); */
     color: white;
+    width: 100%;
     font-weight: 900;
     font-size: xx-large;
+    background-image: url('path/to/your/default-previous-image.jpg');
 }
 
 #nextBtn{
     padding: 2%;
-    background-color: rgb(15,6,23);
+    /* background-color: rgb(15,6,23); */
     color: white;
+    width: 100%;
     font-weight: 900;
     font-size: xx-large;
+    background-image: url('path/to/your/default-next-image.jpg');
 }
 
 #imgSlider{
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     justify-content: center;
 }
 

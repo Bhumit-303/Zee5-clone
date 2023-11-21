@@ -79,6 +79,7 @@ function nextImage() {
         currentIndex = 0;
     }
     updateImage();
+    updateButtonBackgrounds()
 }
 
 function prevImage() {
@@ -87,10 +88,17 @@ function prevImage() {
         currentIndex = TVbanner.length - 1;
     }
     updateImage();
+    updateButtonBackgrounds()
 }
 
 nextButton.addEventListener("click", nextImage);
 prevButton.addEventListener("click", prevImage);
+
+function updateButtonBackgrounds() {
+    prevButton.style.backgroundImage = `url('${TVbanner[currentIndex - 1 < 0 ? TVbanner.length - 1 : currentIndex - 1]}')`;
+    nextButton.style.backgroundImage = `url('${TVbanner[currentIndex + 1 >= TVbanner.length ? 0 : currentIndex + 1]}')`;
+}
+
 
 // Add autoplay functionality
 let autoplayInterval;

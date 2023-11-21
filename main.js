@@ -26,6 +26,7 @@ function nextImage() {
         currentIndex = 0;
     }
     image.setAttribute("src", imgBanner[currentIndex]);
+    updateButtonBackgrounds();
 }
 
 function prevImage() {
@@ -34,6 +35,12 @@ function prevImage() {
         currentIndex = imgBanner.length - 1;
     }
     image.setAttribute("src", imgBanner[currentIndex]);
+    updateButtonBackgrounds();
+}
+
+function updateButtonBackgrounds() {
+    prevButton.style.backgroundImage = `url('${imgBanner[currentIndex - 1 < 0 ? imgBanner.length - 1 : currentIndex - 1]}')`;
+    nextButton.style.backgroundImage = `url('${imgBanner[currentIndex + 1 >= imgBanner.length ? 0 : currentIndex + 1]}')`;
 }
 
 function startAutoplay() {
