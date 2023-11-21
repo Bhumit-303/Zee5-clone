@@ -1,0 +1,105 @@
+
+#BGimg {
+    display: flex;
+    opacity: 0.4;
+    position: sticky;
+}
+
+#BGimg img {
+    height: 290px;
+    width: auto;
+    /* margin: -8px; */
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+}
+
+#payment{
+    display: flex;
+    color: white;
+    justify-content: center;
+    background-color: rgb(29,20,37);
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 4%;
+}
+button{
+    background-color: rgb(131,48,198);
+    padding: 15px 200px 15px 200px;
+    border-radius: 10px;
+}
+
+#main{
+    width: 60%;
+    margin: auto;
+}
+#plans{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    width: 80%;
+    margin: auto;
+}
+
+.AMT{
+    border: 1px solid rgb(77, 74, 74);
+    height: 110px;
+    width: 160px;
+    line-height: 3px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#code{
+    border: none;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: rgb(29,20,37);
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#cod{
+    display: flex;
+}
+
+#bplan{
+    color: white;
+}
+
+table{
+    margin: auto;
+    text-align: center;
+    justify-content: space-around;
+    width: 80%;
+    line-height: 50px;
+}
+hr{
+    width: 60%;
+}
+
+tr td{
+    border-bottom: 1px solid grey; 
+}
+
+#foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.about{
+    width: 20%;
+}
