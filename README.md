@@ -13,16 +13,17 @@ Sure, here's a detailed description of your Zee5 clone project:
 - JavaScript
 
 ### Project Structure: ###
-# HTML Files (7):
+# HTML Files (8):
 1. `index.html`: The main landing page.
 2. `home.html`: Home page of the Zee5 clone.
 3. `movies.html`: Page for displaying movies.
 4. `premium.html`: Page for premium content.
 5. `series.html`: Page for displaying series.
 6. `tv.html`: Page dedicated to TV shows.
-7. `nav.html`: Navigation component for consistency.
+7. `nav.html`: NavBar component.
+8. `buy.html` : Page for Buy Premium
 
-# CSS Files (7):
+# CSS Files (8):
 1. `footer.css`: Styles for the footer.
 2. `main.css`: Main styles for the entire site.
 3. `main2.css`: Additional styles for the main content.
@@ -30,13 +31,15 @@ Sure, here's a detailed description of your Zee5 clone project:
 5. `premium.css`: Styles for the premium content page.
 6. `series.css`: Styles for the series page.
 7. `TV.css`: Styles for the TV shows page.
+8. `buy.css` : Styles for the Buy Page
 
-# JavaScript Files (5):
+# JavaScript Files (6):
 1. `main.js`: Main JavaScript file for general functionality.
 2. `movies.js`: JavaScript for the movies page.
 3. `premium.js`: JavaScript for the premium content page.
 4. `TV.js`: JavaScript for the TV shows page.
 5. `series.js`: JavaScript for the series page.
+6. `Buy.js` : JavaScript for the buy page
 
 # Features and Achievements:
 1. **Rapid Development:** Completed the entire cloning project in just 3 days.
